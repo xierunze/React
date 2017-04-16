@@ -1,0 +1,426 @@
+.home5 {
+    width: 100%;
+    .loginBox {
+        width: 100%;
+        height: 100%;
+        padding: .15rem .3rem;
+        background: #fff;
+        ul {
+            width: 100%;
+            @include flexbox();
+            @include align-items(center);
+            li {
+                width: 50%;
+                height: .45rem;
+                text-align: center;
+                span {
+                    display: block;
+                    font: .14rem "微软雅黑";
+                    color: #444;
+                    padding: .05rem 0;
+                }
+            }
+            .active {
+                border-bottom: .02rem solid #f00;
+                span {
+                    color: #f00;
+                }
+            }
+        }
+        .loginGo {
+            width: 100%;
+            span {
+                display: block;
+                width: 100%;
+                height: .4rem;
+                margin-top: .1rem;
+            }
+            .loginName {
+                width: 100%;
+                height: .4rem;
+                border: .01rem solid #cccccc;
+                border-radius: .03rem;
+                margin-top: .2rem;
+                background: #fff;
+                @include flexbox();
+                @include justify-content(space-between);
+                @include align-items(center);
+                i {
+                    width: 10%;
+                    font-size: .2rem;
+                    color: #444;
+                    padding-left: .05rem;
+                }
+                input {
+                    width: 90%;
+                    border: none;
+                }
+            }
+            .loginPass {
+                width: 100%;
+                height: .4rem;
+                border: .01rem solid #cccccc;
+                border-radius: .03rem;
+                background: #fff;
+                @include flexbox();
+                @include justify-content(space-between);
+                @include align-items(center);
+                i {
+                    width: 10%;
+                    font-size: .2rem;
+                    color: #444;
+                    padding-left: .05rem;
+                }
+                input {
+                    width: 90%;
+                    border: none;
+                }
+            }
+            .sub {
+                width: 100%;
+                button {
+                    width: 100%;
+                    height: .4rem;
+                    line-height: .3rem;
+                    text-align: center;
+                    color: #fff;
+                    background: #DE4B45;
+                    border-radius: .05rem;
+                    border: none;
+                }
+            }
+            .registerGo {
+                width: 100%;
+                margin-top: .5rem;
+                @include flexbox();
+                @include justify-content(space-between);
+                a {
+                    color: #444;
+                    font: .13rem "微软雅黑";
+                    text-decoration: underline;
+                }
+            }
+            .outUrl {
+                width: 100%;
+                position: relative;
+                margin-top: .4rem;
+                .noneBor {
+                    height: .2rem;
+                    border-bottom: .01rem solid #ccc;
+                }
+                .textBor {
+                    font: .14rem "微软雅黑";
+                    position: absolute;
+                    top: -0.1rem;
+                    left: 35%;
+                    padding: 0 .1rem;
+                    background: #fff;
+                    color: #ccc;
+                }
+                .isUrl {
+                    width: 100%;
+                    margin-top: .3rem;
+                    margin-bottom: 2rem;
+                    @include flexbox();
+                    @include justify-content(space-around);
+                    .iconfont {
+                        font-size: .5rem;
+                        color: #444;
+                    }
+                }
+            }
+        }
+        .loginGo2 {
+            width: 100%;
+            height: 100%;
+            display: none;
+            #decidePhone {
+                display: block;
+                width: 100%;
+                height: .4rem;
+                margin-top: .1rem;
+            }
+            #decideNum {
+                display: block;
+                width: 100%;
+                height: .4rem;
+                margin-top: .1rem;
+            }
+            #codeJudge {
+                display: block;
+                width: 100%;
+                height: .4rem;
+                margin-top: .1rem;
+            }
+            .phoneLogin {
+                width: 100%;
+                height: .4rem;
+                border: .01rem solid #cccccc;
+                border-radius: .03rem;
+                margin-top: .2rem;
+                background: #fff;
+                @include flexbox();
+                @include justify-content(space-between);
+                @include align-items(center);
+                i {
+                    width: 10%;
+                    padding-left: .1rem;
+                    font-size: .18rem;
+                }
+                input {
+                    width: 90%;
+                    border: none;
+                }
+            }
+            .phoneYan {
+                width: 100%;
+                height: .4rem;
+                border-radius: .03rem;
+                background: #fff;
+                @include flexbox();
+                @include justify-content(space-between);
+                @include align-items(center);
+                input {
+                    height: 100%;
+                    border: .01rem solid #cccccc;
+                    width: 40%;
+                    padding-left: .1rem;
+                    border-radius: .04rem;
+                }
+                #numberMove {
+                    display: block;
+                    width: 30%;
+                    height: .4rem;
+                    text-align: center;
+                    line-height: .4rem;
+                    font-size: .2rem;
+                    background: #fff;
+                    color: #DE4B45;
+                    background: #f7f7f7;
+                    border: .01rem solid #ccc;
+                }
+                #nextNum {
+                    display: block;
+                    width: 20%;
+                    text-align: center;
+                    line-height: .4rem;
+                }
+            }
+            .phonePass {
+                width: 100%;
+                height: .4rem;
+                border-radius: .03rem;
+                background: #fff;
+                @include flexbox();
+                @include justify-content(space-between);
+                @include align-items(center);
+                input {
+                    height: 100%;
+                    border: .01rem solid #ccc;
+                    padding-left: .1rem;
+                    border-radius: .04rem;
+                }
+                button {
+                    width: 30%;
+                    height: 100%;
+                    background: #DE4B45;
+                    text-align: center;
+                    line-height: .4rem;
+                    color: #fff;
+                    border: none;
+                    border-radius: .04rem;
+                }
+            }
+            .goBut {
+                width: 100%;
+                height: 5rem;
+                button {
+                    width: 100%;
+                    height: .4rem;
+                    line-height: .4rem;
+                    text-align: center;
+                    font-size: .15rem;
+                    color: #fff;
+                    background: #DE4B45;
+                    border: none;
+                    border-radius: .04rem;
+                }
+            }
+        }
+    }
+}
+
+.registerBox {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    .loginGo2 {
+        width: 100%;
+        height: 100%;
+        padding: 0 .2rem;
+        #decidePhone {
+            display: block;
+            width: 100%;
+            height: .4rem;
+            margin-top: .1rem;
+        }
+        #decideNum {
+            display: block;
+            width: 100%;
+            height: .4rem;
+            margin-top: .1rem;
+        }
+        #codeJudge {
+            display: block;
+            width: 100%;
+            height: .4rem;
+            margin-top: .1rem;
+        }
+        #passFox {
+            display: block;
+            width: 100%;
+            height: .4rem;
+            margin-top: .1rem;
+        }
+        #passFix {
+            display: block;
+            width: 100%;
+            height: .4rem;
+            margin-top: .1rem;
+        }
+        .phoneLogin {
+            width: 100%;
+            height: .4rem;
+            border: .01rem solid #cccccc;
+            border-radius: .03rem;
+            margin-top: .2rem;
+            background: #fff;
+            @include flexbox();
+            @include justify-content(space-between);
+            @include align-items(center);
+            i {
+                width: 10%;
+                padding-left: .1rem;
+                font-size: .18rem;
+            }
+            input {
+                width: 90%;
+                border: none;
+            }
+        }
+        .phoneYan {
+            width: 100%;
+            height: .4rem;
+            border-radius: .03rem;
+            background: #fff;
+            @include flexbox();
+            @include justify-content(space-between);
+            @include align-items(center);
+            input {
+                height: 100%;
+                border: .01rem solid #cccccc;
+                width: 40%;
+                padding-left: .1rem;
+                border-radius: .04rem;
+            }
+            #numberMove {
+                display: block;
+                width: 30%;
+                height: .4rem;
+                text-align: center;
+                line-height: .4rem;
+                font-size: .2rem;
+                background: #fff;
+                color: #DE4B45;
+                background: #f7f7f7;
+                border: .01rem solid #ccc;
+            }
+            #nextNum {
+                display: block;
+                width: 20%;
+                text-align: center;
+                line-height: .4rem;
+            }
+        }
+        .phonePass {
+            width: 100%;
+            height: .4rem;
+            border-radius: .03rem;
+            background: #fff;
+            @include flexbox();
+            @include justify-content(space-between);
+            @include align-items(center);
+            input {
+                height: 100%;
+                border: .01rem solid #ccc;
+                padding-left: .1rem;
+                border-radius: .04rem;
+            }
+            button {
+                width: 30%;
+                height: 100%;
+                background: #DE4B45;
+                text-align: center;
+                line-height: .4rem;
+                color: #fff;
+                border: none;
+                border-radius: .04rem;
+            }
+        }
+        .passBox1 {
+            width: 100%;
+            height: .4rem;
+            border: .01rem solid #cccccc;
+            border-radius: .03rem;
+            background: #fff;
+            @include flexbox();
+            @include justify-content(space-between);
+            @include align-items(center);
+            i {
+                width: 10%;
+                font-size: .2rem;
+                color: #444;
+                padding-left: .05rem;
+            }
+            input {
+                width: 90%;
+                border: none;
+            }
+        }
+        .passBox2 {
+            width: 100%;
+            height: .4rem;
+            border: .01rem solid #cccccc;
+            border-radius: .03rem;
+            background: #fff;
+            @include flexbox();
+            @include justify-content(space-between);
+            @include align-items(center);
+            i {
+                width: 10%;
+                font-size: .2rem;
+                color: #444;
+                padding-left: .05rem;
+            }
+            input {
+                width: 90%;
+                border: none;
+            }
+        }
+        .goBut {
+            width: 100%;
+            height: 5rem;
+            button {
+                width: 100%;
+                height: .4rem;
+                line-height: .4rem;
+                text-align: center;
+                font-size: .15rem;
+                color: #fff;
+                background: #DE4B45;
+                border: none;
+                border-radius: .04rem;
+            }
+        }
+    }
+}

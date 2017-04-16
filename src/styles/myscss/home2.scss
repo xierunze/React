@@ -1,0 +1,250 @@
+.classifyTop {
+    width: 100%;
+    height: .5rem;
+    background: #de4943;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(space-around);
+    a {
+        font: .13rem "微软雅黑";
+        color: #fff;
+    }
+    h3 {
+        font: .16rem "黑体";
+        color: #fff;
+        padding: 0 .5rem;
+    }
+    .iconfont {
+        font-size: .2rem;
+        color: #fff;
+    }
+}
+
+.listScroll {
+    width: 100%;
+    height: 100% !important;
+    @include flexbox();
+    @include flex-direction(column);
+    .colunmBox {
+        @include flex();
+        width: 100%;
+        overflow-y: scroll;
+        .indexList {
+            width: 100%;
+            background: #f7f7f7;
+            @include flexbox();
+            @include justify-content(space-between);
+            @include flex-wrap(wrap);
+            .wrapList {
+                width: 49.5%;
+                background: #fff;
+                margin-top: .05rem;
+                ul {
+                    padding: .2rem .1rem .05rem;
+                    a {
+                        display: block;
+                        li {
+                            img {
+                                width: 100%;
+                            }
+                            &:nth-child(2) {
+                                span {
+                                    display: block;
+                                    height: .32rem;
+                                    overflow: hidden;
+                                    color: #252525;
+                                    font-size: 12px;
+                                }
+                            }
+                            &:nth-child(3) {
+                                span {
+                                    font-size: .14rem;
+                                    color: #fc5a5a;
+                                    font-weight: bold;
+                                }
+                                del {
+                                    color: #999;
+                                    display: inline-block;
+                                    font-size: .12rem;
+                                    margin-left: .05rem;
+                                    text-decoration: line-through;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.seleNone {
+    width: 100%;
+    background: #f7f7f7;
+    display: none;
+    ul {
+        width: 100%;
+        @include flexbox();
+        @include justify-content(space-around);
+        @include align-items(center);
+        padding: .1rem 0;
+        li {
+            width: 25%;
+            a {
+                color: #444;
+                @include flexbox();
+                @include flex-direction(column);
+                @include justify-content(center);
+                text-align: center;
+                .iconfont {
+                    font-size: .2rem;
+                }
+                span {
+                    font: .14rem "微软雅黑";
+                }
+            }
+        }
+    }
+}
+
+.classify {
+    width: 100%;
+    height: 100%;
+    .searchBox {
+        width: 100%;
+        height: .5rem;
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(center);
+        .fromBox {
+            width: 90%;
+            height: .3rem;
+            @include flexbox();
+            @include justify-content(space-between);
+            @include align-items(center);
+            input {
+                width: 80%;
+                height: 100%;
+                border: none;
+                background: #fff;
+                padding-left: .2rem;
+            }
+            button {
+                width: 20%;
+                height: 100%;
+                border: none;
+                background: #de4943;
+            }
+        }
+        .mengBox {
+            width: 100%;
+            height: 5.67rem;
+            position: absolute;
+            bottom: 0;
+            display: none;
+            .changes {
+                width: 100%;
+                height: 1.2rem;
+                background: #fff;
+                @include flexbox();
+                @include justify-content(space-between);
+                .changLeft {
+                    width: 30%;
+                    height: 100%;
+                    padding: .1rem .1rem;
+                }
+                .changRight {
+                    width: 70%;
+                    height: 100%;
+                    padding: .1rem 0;
+                    a {
+                        display: inline-block;
+                        padding: .05rem .15rem;
+                        margin-right: .1rem;
+                        margin-bottom: .1rem;
+                        border: solid .01rem #ccc;
+                        color: #444;
+                        font: .12rem "微软雅黑";
+                        border-radius: .04rem;
+                    }
+                }
+            }
+            .mengs {
+                width: 100%;
+                height: 4.47rem;
+                background: #000;
+                opacity: 0.3;
+            }
+        }
+    }
+    .listGoBox {
+        width: 100%;
+        ul {
+            width: 100%;
+            @include flexbox();
+            @include justify-content(space-around);
+            @include flex-wrap(wrap);
+            li {
+                width: 33%;
+                height: .8rem;
+                background: #fff;
+                margin-top: .03rem;
+                a {
+                    color: #444;
+                    i {
+                        display: block;
+                        width: .36rem;
+                        height: .36rem;
+                        margin: .1rem auto;
+                    }
+                    span {
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.detailBox {
+    width: 100%;
+    height: 100% !important;
+    @include flexbox();
+    @include flex-direction(column);
+    .detailOne {
+        @include flex();
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        .detailTop {
+            width: 100%;
+            height: 100% !important;
+            background: #fff;
+            ul {
+                width: 100%;
+                @include flexbox();
+                @include flex-wrap(wrap);
+                li {
+                    img {
+                        width: 100%;
+                    }
+                    p {
+                        width: 90%;
+                        font: .15rem "微软雅黑";
+                        color: #444;
+                        margin: .1rem auto;
+                    }
+                    span {
+                        display: block;
+                        margin-top: .15rem;
+                        margin-left: .2rem;
+                        color: #f00;
+                        font-size: .2rem;
+                    }
+                }
+            }
+        }
+    }
+}
